@@ -15,8 +15,6 @@ test('add item to cart', function() {
         ->toBeArray()
         ->toHaveKey(10);
 
-        var_dump($shoppingCartItems[10]->price);
-    
     // test if added item name equals Tv LG
     expect($shoppingCartItems[10]->name === "Tv LG")->toBeTrue();
 
